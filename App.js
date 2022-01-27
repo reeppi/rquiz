@@ -52,7 +52,7 @@ var scoreboardData= {
 
 const BASE_URL_OFFLINE="http://192.168.0.101:8888";
 const BASE_URL_ONLINE="https://reeppi-quiz.netlify.app";
-const localApi=true;
+const localApi=false;
 
 const App = () => {
   //useEffect(() => {  }, []);
@@ -167,12 +167,11 @@ const  ScoreBoardPage = () =>
 
   const [valOption, setOption] = useState(null);
   const Option = (item, index) => {
-    
      const bgColor = index === valOption ? "#8bdff0" : "#e1edeb";
      return (
      <View key={index}>
       <TouchableOpacity style={{backgroundColor: bgColor, padding:10}} onPress={() => setOption(index)}>
-      <Text>{iC[index]}) {item}</Text>
+       <Text>{iC[index]}) {item}</Text>
       </TouchableOpacity>
      </View>)
    }
