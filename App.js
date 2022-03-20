@@ -3,14 +3,12 @@
  * @flow strict-local
  */
  //import * as data from './test.json';
- import React, {useState, useEffect, useRef} from 'react';
+ import React, {useState, useEffect} from 'react';
  import {
    SafeAreaView,
    ScrollView,
-   StatusBar,
    StyleSheet,
    Text,
-   useColorScheme,
    View,
    TouchableOpacity,
    Button,
@@ -18,15 +16,9 @@
    TextInput,
  } from 'react-native';
 
- 
- 
- import {
-   Colors,
- } from 'react-native/Libraries/NewAppScreen';
- 
 var answers = [];
 var nr = 0;
-var strNameQuiz = 'test';
+var strNameQuiz = '';
 const iC = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
 
 var data= {
