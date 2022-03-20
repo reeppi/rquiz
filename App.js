@@ -336,10 +336,6 @@ const  ScoreBoardPage = () =>
   defaultText: {
     fontSize: 16,
   },
-   sectionContainer: {
-     marginTop: 1,
-     paddingHorizontal: 5,
-   },
    sectionTitle: {
      fontSize: 24,
      fontWeight: '600',
@@ -352,9 +348,6 @@ const  ScoreBoardPage = () =>
      marginTop: 1,
      fontSize: 10,
      fontWeight: '400',
-   },
-   highlight: {
-     fontWeight: '900',
    },
    separator: {
     marginVertical: 8,
